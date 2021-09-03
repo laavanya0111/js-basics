@@ -1,14 +1,15 @@
 
-//Primitive Data Types
-let age=19
-let name="Laavanya"
-console.log(age)
-let isTrue = false
-let isFalse = true
+// Arithmetic Operator
+const a = 2
+const b = 2
+let c = 0
+console.log(a+b)
+console.log(a-b)
+console.log(a*b)
+console.log(a/b)
+console.log(a**b)
+console.log(b % a)
 
-//Non-Primitive data Types
-let arr = [1,2,3,4,5]
-arr.push("value")
-arr.unshift(false)
-console.log(arr)
-console.log(typeof arr)
+console.log('-----------------------------')
+c += 1
+console.log(c)
