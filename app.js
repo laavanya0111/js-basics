@@ -1,4 +1,3 @@
 
-// Asignment Operator
-let name = 'Sakshi'
- let a = 9
+const element = document.querySelector('#selectme')
+console.log(element)
