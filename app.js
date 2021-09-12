@@ -1,29 +1,17 @@
-console.log("Merged Class 2 ES6");
+let concert = true
 
-let ranks = [1,2,3,4];
-
-console.log(
-    ranks.map((e, index) => {
-        return e*100;
-    })
-);
-
-console.log(
-    ranks.forEach((e, index) => {
-        return e*100;
-    })
-);
-
-let newarr = ranks.map((e, index) => {
-    console.log(e);
-    console.log(index);
-    if (e % 2 === 0) return e;
+let attendConcert = new Promise(function(resolve, reject) {
+    setTimeout(() => {
+        if(concert){
+            resolve("BOB attended the concert")
+        }
+        else {
+            reject("BOB did not attended the session")
+        }
+    }, 2000);
 });
-console.log(newarr);
+console.log(attendConcert);
+console.log(attendConcert);
 
-let newfilterarr = ranks.filter((e, index) => {
-    console.log(e)
-    if(e%2===0)
-    return e
-})
-console.log(newfilterarr)
+attendConcert.then((data) => console.log(data));
+attendConcert.catch((error) => console.log(error));
