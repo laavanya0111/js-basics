@@ -1,25 +1,29 @@
+console.log("Merged Class 2 ES6");
 
-const rock = document.querySelector('#rock')
-const paper = document.querySelector('#paper')
-const scissor = document.querySelector('#scissor')
-const board = document.querySelector('#board')
+let ranks = [1,2,3,4];
 
-const handler = (e) =>{
-    const action = e.target.id
-    if (action === 'rock'){
-        board.innerHTML = "Rock crushes scissor"
-    }
-    else if (action === 'paper'){
-        board.innerHTML = "Paper traps rock"
-    }
-    else if (action === 'scissor'){
-        board.innerHTML = "Scissor cuts paper"
-    }
-    else {
-        board.innerHTML = "Click something"
-    }
-}
+console.log(
+    ranks.map((e, index) => {
+        return e*100;
+    })
+);
 
-rock.addEventListener('click', handler)
-paper.addEventListener('click', handler)
-scissor.addEventListener('click',handler)
+console.log(
+    ranks.forEach((e, index) => {
+        return e*100;
+    })
+);
+
+let newarr = ranks.map((e, index) => {
+    console.log(e);
+    console.log(index);
+    if (e % 2 === 0) return e;
+});
+console.log(newarr);
+
+let newfilterarr = ranks.filter((e, index) => {
+    console.log(e)
+    if(e%2===0)
+    return e
+})
+console.log(newfilterarr)
